@@ -72,7 +72,7 @@ if st.button("Predict Churn"):
     # A more robust way would be to save and load the LabelEncoder as well.
     # For simplicity here, we'll just use the integer output and probability.
     threshold = 0.67
-    churn_status = 1 if prediction_proba[0] >= threshold else 0
+    churn_status = "Churn" if prediction_proba[0] >= threshold else "No Churn"
     #churn_status = "Churn" if prediction_encoded[0] == 1 else "No Churn"
 
 
